@@ -13,7 +13,7 @@ $(document ).ready(function() {
     }
 
     function updateView(){
-    	$(".number p").text(nrOfCats);
+    	$(".number").text(nrOfCats);
     	$(".cats").html("");
     	for (var i = 0; i < nrOfCats; i++) {
     		$(".cats").append("<img class='cat' src='./img/cat.png'/>");

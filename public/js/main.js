@@ -4,12 +4,14 @@ $(document ).ready(function() {
 
     function incrementNrOfCats(){
     	nrOfCats ++;
-    	updateView();
+        updateView();
     }
 
     function decrementNrOfCats(){
-    	nrOfCats --;
-    	updateView();
+        if(nrOfCats > 0){
+            nrOfCats --;
+            updateView();
+        }
     }
 
     function updateView(){
